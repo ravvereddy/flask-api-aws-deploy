@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo yum update && sudo yum install python3-pip
 sudo pip3 install virtualenv
 cd /home/ec2-user/app
 virtualenv environment
