@@ -1,8 +1,8 @@
 #!/bin/bash
 sudo yum install python35 python35-devel python35-pip python35-setuptools python35-virtualenv -y
 sudo pip-3.5 install --upgrade pip -y
+sudo export PATH=$HOME/usr/local/bin/pip3.5:$PATH
 sudo pip3 install virtualenv
-pip --version
 cd /home/ec2-user/app
 virtualenv environment
 source environment/bin/activate
