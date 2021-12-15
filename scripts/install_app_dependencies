@@ -1,7 +1,6 @@
 #!/bin/bash
-sudo yum install python38-pip -y
-sudo curl -O https://bootstrap.pypa.io/get-pip.py
-python3 get-pip.py --user
+sudo yum install python35 python35-devel python35-pip python35-setuptools python35-virtualenv -y
+sudo pip-3.5 install --upgrade pip -y
 sudo pip3 install virtualenv
 pip --version
 cd /home/ec2-user/app
