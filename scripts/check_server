@@ -1,0 +1,11 @@
+#!/bin/bash 
+
+CMD1=$(ps -ef | grep supervisord | grep -v grep | awk '{print $2}' | xargs kill)
+
+[ $? -eq 0 ]  && echo "Killed supervisour process" || echo "No process found"
+
+CMD2=$(ps -ef | grep gunicorn | grep -v grep | awk '{print $2}' | xargs kill)
+
+[ $? -eq 0 ]  && echo "Killed all gunicorn process" || echo "No process found"
+
+sleep 10
