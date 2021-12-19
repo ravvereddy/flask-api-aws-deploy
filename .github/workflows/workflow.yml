@@ -45,7 +45,7 @@ jobs:
         run: |
           # Assuming the Deployment Group is already setup
           aws deploy create-deployment \
-            --application-name python-app-MyApplication-1VV5EOO6EHEH5 \
-            --deployment-group-name python-app-MyDeploymentGroup-ZT5X3P4D4G7U \
+            --application-name demo-app-MyApplication-110CN7JO1V28V \
+            --deployment-group-name demo-app-MyDeploymentGroup-1BWLWK3GFPO7U \
             --deployment-config-name CodeDeployDefault.OneAtATime \
             --github-location repository=${{ github.repository }},commitId=${{ github.sha }}
